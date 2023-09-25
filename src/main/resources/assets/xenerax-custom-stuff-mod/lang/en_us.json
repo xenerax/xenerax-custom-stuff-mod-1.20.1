@@ -1,0 +1,34 @@
+{
+  "item.xenerax-custom-stuff-mod.ruby": "Ruby",
+  "item.xenerax-custom-stuff-mod.raw_ruby": "Raw Ruby",
+  "item.xenerax-custom-stuff-mod.metal_detector": "Metal Detector",
+
+  "item.xenerax-custom-stuff-mod.ruby_pickaxe": "Ruby Pickaxe",
+  "item.xenerax-custom-stuff-mod.ruby_axe": "Ruby Axe",
+  "item.xenerax-custom-stuff-mod.ruby_shovel": "Ruby Shovel",
+  "item.xenerax-custom-stuff-mod.ruby_sword": "Ruby Sword",
+  "item.xenerax-custom-stuff-mod.ruby_hoe": "Ruby Hoe",
+
+  "item.xenerax-custom-stuff-mod.ruby_staff": "Ruby Staff",
+  "item.xenerax-custom-stuff-mod.blood_sword": "Rivers of Blood",
+
+  "item.xenerax-custom-stuff-mod.ruby_helmet": "Ruby Helmet",
+  "item.xenerax-custom-stuff-mod.ruby_chestplate": "Ruby Chestplate",
+  "item.xenerax-custom-stuff-mod.ruby_leggings": "Ruby Leggings",
+  "item.xenerax-custom-stuff-mod.ruby_boots": "Ruby Boots",
+
+  "block.xenerax-custom-stuff-mod.ruby_block": "Block of Ruby",
+  "block.xenerax-custom-stuff-mod.customizer_block": "Customizer",
+  "block.xenerax-custom-stuff-mod.sound_block": "Sound Block",
+
+  "block.xenerax-custom-stuff-mod.ruby_ore": "Ruby Ore",
+  "block.xenerax-custom-stuff-mod.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.xenerax-custom-stuff-mod.nether_ruby_ore": "Nether Ruby Ore",
+  "block.xenerax-custom-stuff-mod.end_ruby_ore": "End Ruby Ore",
+
+  "itemgroup.ruby": "Ruby Items",
+
+  "effect.xenerax-custom-stuff-mod.bleed": "Bleed",
+  "enchantment.xenerax-custom-stuff-mod.lightning_striker": "Lightning Striker",
+  "enchantment.xenerax-custom-stuff-mod.bleed": "Bleed"
+}
