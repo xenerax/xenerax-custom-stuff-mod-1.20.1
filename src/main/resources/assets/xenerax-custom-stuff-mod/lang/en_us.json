@@ -10,7 +10,6 @@
   "item.xenerax-custom-stuff-mod.ruby_hoe": "Ruby Hoe",
 
   "item.xenerax-custom-stuff-mod.ruby_staff": "Ruby Staff",
-  "item.xenerax-custom-stuff-mod.blood_sword": "Rivers of Blood",
 
   "item.xenerax-custom-stuff-mod.ruby_helmet": "Ruby Helmet",
   "item.xenerax-custom-stuff-mod.ruby_chestplate": "Ruby Chestplate",
@@ -28,7 +27,27 @@
 
   "itemgroup.ruby": "Ruby Items",
 
+
+
+  "itemgroup.custom": "Custom Items",
+
+  "item.xenerax-custom-stuff-mod.blood_sword": "Rivers of Blood",
+  "item.xenerax-custom-stuff-mod.dragon_sword": "Dragon Sword",
+  "item.xenerax-custom-stuff-mod.rott_scythe": "Spider Goddess's Scythe",
+
+  "item.xenerax-custom-stuff-mod.copper_helmet": "Copper Helmet",
+  "item.xenerax-custom-stuff-mod.copper_chestplate": "Copper Chestplate",
+  "item.xenerax-custom-stuff-mod.copper_leggings": "Copper Leggings",
+  "item.xenerax-custom-stuff-mod.copper_boots": "Copper Boots",
+
+  "item.xenerax-custom-stuff-mod.copper_plate": "Copper Plate",
+  "item.xenerax-custom-stuff-mod.iron_bolt": "Iron Bolt",
+  "item.xenerax-custom-stuff-mod.reinforced_copper_plate": "Reinforced Copper Plate",
+  "item.xenerax-custom-stuff-mod.hardened_reinforced_copper_plate": "Hardened Reinforced Copper Plate",
+
   "effect.xenerax-custom-stuff-mod.bleed": "Bleed",
+  "effect.xenerax-custom-stuff-mod.rott": "Rott",
+
   "enchantment.xenerax-custom-stuff-mod.lightning_striker": "Lightning Striker",
   "enchantment.xenerax-custom-stuff-mod.bleed": "Bleed"
 }

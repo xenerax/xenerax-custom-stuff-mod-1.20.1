@@ -8,9 +8,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.xenerax.customstuff.CustomStuff;
-import net.xenerax.customstuff.item.custom.BleedSwordItem;
-import net.xenerax.customstuff.item.custom.MetalDetectorItem;
-import net.xenerax.customstuff.item.custom.ModArmorItem;
+import net.xenerax.customstuff.item.custom.*;
 
 public class ModItems {
 
@@ -38,7 +36,11 @@ public class ModItems {
 
 
     public static final Item BLOOD_SWORD = registerItem("blood_sword",
-            new BleedSwordItem(ModToolMaterial.BLOOD, 5, -2f, new FabricItemSettings()));
+            new BleedSwordItem(ModToolMaterial.BLOOD, 8, -2.4f, new FabricItemSettings()));
+    public static final Item DRAGON_SWORD = registerItem("dragon_sword",
+            new DragonSwordItem(ModToolMaterial.DRAGON, 8, -2.4f, new FabricItemSettings()));
+    public static final Item ROTT_SCYTHE = registerItem("rott_scythe",
+            new RottScytheItem(ModToolMaterial.ROTT, 14, -3.2f, new FabricItemSettings()));
 
 
 
@@ -51,15 +53,35 @@ public class ModItems {
     public static final Item RUBY_BOOTS = registerItem("ruby_boots",
             new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    public static final Item COPPER_HELMET = registerItem("copper_helmet",
+            new CopperArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item COPPER_CHESTPLATE = registerItem("copper_chestplate",
+            new CopperArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item COPPER_LEGGINGS = registerItem("copper_leggings",
+            new CopperArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item COPPER_BOOTS = registerItem("copper_boots",
+            new CopperArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+
+    public static final Item COPPER_PLATE = registerItem("copper_plate", new Item(new FabricItemSettings()));
+
+    public static final Item IRON_BOLT = registerItem("iron_bolt", new Item(new FabricItemSettings()));
+
+    public static final Item REINFORCED_COPPER_PLATE = registerItem("reinforced_copper_plate", new Item(new FabricItemSettings()));
+
+    public static final Item HARDENED_REINFORCED_COPPER_PLATE = registerItem("hardened_reinforced_copper_plate", new Item(new FabricItemSettings()));
+    public static final Item WHETSTONE = registerItem("whetstone", new Item(new FabricItemSettings()));
+    public static final Item BLOODY_WHETSTONE = registerItem("bloody_whetstone", new Item(new FabricItemSettings()));
+    public static final Item BLOOD_CLOTT = registerItem("blood_clott", new Item(new FabricItemSettings()));
+
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(RUBY);
-        entries.add(RAW_RUBY);
+
     }
 
     private static  void  addItemsToCombatItemGroup(FabricItemGroupEntries entries){
-        entries.add(BLOOD_SWORD);
+
     }
 
     private static Item registerItem(String name, Item item) {

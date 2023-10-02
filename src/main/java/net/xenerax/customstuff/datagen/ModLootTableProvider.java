@@ -43,5 +43,5 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                                 .create(2.0f, 5.0f))))
                         .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
     }
-
 }
+

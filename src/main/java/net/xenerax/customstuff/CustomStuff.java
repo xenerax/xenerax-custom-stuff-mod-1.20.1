@@ -26,5 +26,6 @@ public class CustomStuff implements ModInitializer {
 
 		ModEffects.registerEffects();
 		ModEnchantments.registerModEnchantments();
+
 	}
 }

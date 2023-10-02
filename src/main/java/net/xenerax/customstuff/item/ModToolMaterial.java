@@ -9,6 +9,10 @@ public enum ModToolMaterial implements ToolMaterial {
     RUBY(5, 650, 4.5f, 3.5f, 26,
             () -> Ingredient.ofItems(ModItems.RUBY)),
     BLOOD(0, 2000, 0f, 0f, 26,
+            () -> Ingredient.ofItems(ModItems.RUBY)),
+    ROTT(0, 2000, 0f, 0f, 26,
+            () -> Ingredient.ofItems(ModItems.RUBY)),
+    DRAGON(0, 2000, 0f, 0f, 26,
             () -> Ingredient.ofItems(ModItems.RUBY))
     ;
 

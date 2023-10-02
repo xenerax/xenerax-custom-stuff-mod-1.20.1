@@ -7,6 +7,7 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
+import net.xenerax.customstuff.effect.BleedEffect;
 import net.xenerax.customstuff.effect.ModEffects;
 
 public class BleedEnchantment extends Enchantment {
@@ -20,25 +21,29 @@ public class BleedEnchantment extends Enchantment {
             ServerWorld world = (ServerWorld) user.getWorld();
 
 
-            int i = ((LivingEntity) target).getStatusEffect(ModEffects.BLEED).getAmplifier(); //game crash weil wenn kein effect da ist hier "null" zurückgegeben wird! int darf nicht null sein
-
-            if(level == 1) {
-                ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 0), user);
-            }
-            if(level == 2) {
-                if(i == 0) {
-                    ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 1), user);
-                }
-                else if (i == 1) {
-                    ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 1), user);
-                }
-                else {
+            if (((LivingEntity) target).getStatusEffect(ModEffects.BLEED) != null) {
+                int amp = ((LivingEntity) target).getStatusEffect(ModEffects.BLEED).getAmplifier();
+                if (level == 1) {
                     ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 0), user);
                 }
+                if (level == 2) {
+                    if (amp == 0) {
+                        ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 1), user);
+                    }
+                    if (amp == 1) {
+                        ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 1), user);
+                    }
+                }
+                if (level == 3) {
+                    if(amp < 2) {
+                        ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, amp + 1), user);
+                    }
+                    else {
+                        ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 2), user);
+                    }
+                }
             }
-            if(level == 3) {
-                ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, i + 1), user);
-            }
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 0), user);
         }
 
         super.onTargetDamaged(user, target, level);

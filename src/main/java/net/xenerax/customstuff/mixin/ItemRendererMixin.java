@@ -31,4 +31,18 @@ public class ItemRendererMixin {
         }
         return value;
     }
+    @ModifyVariable(method = "renderItem", at = @At(value = "HEAD"), argsOnly = true)
+    public BakedModel useDragonSwordModel(BakedModel value, ItemStack stack, ModelTransformationMode renderMode, boolean lefthanded, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
+        if(stack.isOf(ModItems.DRAGON_SWORD) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(CustomStuff.MOD_ID, "dragon_sword_3d", "inventory"));
+        }
+        return value;
+    }
+//    @ModifyVariable(method = "renderItem", at = @At(value = "HEAD"), argsOnly = true)
+//    public BakedModel useRottScytheModel(BakedModel value, ItemStack stack, ModelTransformationMode renderMode, boolean lefthanded, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
+//        if(stack.isOf(ModItems.ROTT_SCYTHE) && renderMode != ModelTransformationMode.GUI) {
+//            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(CustomStuff.MOD_ID, "rott_scythe_2_5d", "inventory"));
+//        }
+//        return value;
+//    }
 }

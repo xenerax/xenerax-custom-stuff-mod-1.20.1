@@ -50,6 +50,32 @@ public class ModItemGroups {
                     }).build());
 
 
+    public static final ItemGroup Custom_Group = Registry.register(Registries.ITEM_GROUP, new Identifier(CustomStuff.MOD_ID, "custom"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.custom"))
+                    .icon(() -> new ItemStack(ModItems.BLOOD_SWORD)).entries((displayContext, entries) -> {
+
+                        //weapons
+                        entries.add(ModItems.BLOOD_SWORD);
+                        entries.add(ModItems.DRAGON_SWORD);
+                        entries.add(ModItems.ROTT_SCYTHE);
+
+                        //armor
+                        entries.add(ModItems.COPPER_HELMET);
+                        entries.add(ModItems.COPPER_CHESTPLATE);
+                        entries.add(ModItems.COPPER_LEGGINGS);
+                        entries.add(ModItems.COPPER_BOOTS);
+
+                        //materials
+                        entries.add(ModItems.COPPER_PLATE);
+                        entries.add(ModItems.IRON_BOLT);
+                        entries.add(ModItems.REINFORCED_COPPER_PLATE);
+                        entries.add(ModItems.HARDENED_REINFORCED_COPPER_PLATE);
+                        entries.add(ModItems.WHETSTONE);
+                        entries.add(ModItems.BLOOD_CLOTT);
+                        entries.add(ModItems.BLOODY_WHETSTONE);
+                    }).build());
+
+
     public static void registerItemGroups() {
         CustomStuff.LOGGER.info("Registering Item Groups for " + CustomStuff.MOD_ID);
     }

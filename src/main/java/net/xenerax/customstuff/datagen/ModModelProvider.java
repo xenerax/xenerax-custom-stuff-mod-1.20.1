@@ -39,12 +39,31 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUBY_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUBY_HOE, Models.HANDHELD);
 
-        itemModelGenerator.register(ModItems.BLOOD_SWORD, Models.HANDHELD);
-
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_BOOTS));
+
+
+        //weapons
+        itemModelGenerator.register(ModItems.BLOOD_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DRAGON_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ROTT_SCYTHE, Models.HANDHELD);
+
+        //armor
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.COPPER_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.COPPER_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.COPPER_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.COPPER_BOOTS));
+
+        //material
+        itemModelGenerator.register(ModItems.COPPER_PLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_BOLT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REINFORCED_COPPER_PLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HARDENED_REINFORCED_COPPER_PLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WHETSTONE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLOOD_CLOTT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLOODY_WHETSTONE, Models.GENERATED);
 
     }
 }
