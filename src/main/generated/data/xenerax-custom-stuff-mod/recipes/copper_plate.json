@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    "III"
+  ],
+  "result": {
+    "item": "xenerax-custom-stuff-mod:copper_plate"
+  },
+  "show_notification": true
+}

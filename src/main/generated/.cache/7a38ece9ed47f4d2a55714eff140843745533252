@@ -1,0 +1,8 @@
+// 1.20.1	2023-10-03T02:01:09.9670728	xenerax Custom Stuff Mod/Tags for minecraft:block
+199e29d86f8375be9d5e6f678ada5cde4296f251 data\fabric\tags\blocks\needs_tool_level_5.json
+32cb153b2b4376db94f7b2f26250415be87e701d data\minecraft\tags\blocks\mineable\pickaxe.json
+76b5a6e062d10bd4f1141170422ca34461ea566c data\minecraft\tags\blocks\needs_stone_tool.json
+9546514331c648e41042dc2a79baf3fb5d2cb2a4 data\minecraft\tags\blocks\needs_iron_tool.json
+f1c4fa0170d968865dcea8c2d297c5f9fd4e053b data\minecraft\tags\blocks\needs_diamond_tool.json
+ace58d3a86506d8694afa9034803f781734cbd07 data\xenerax-custom-stuff-mod\tags\blocks\metal_detector_detectable_blocks.json
+4351701ac7c9290d31b2e1e63e0be3e29233d797 data\fabric\tags\blocks\needs_tool_level_4.json

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "copper",
+  "ingredient": {
+    "item": "xenerax-custom-stuff-mod:reinforced_copper_plate"
+  },
+  "result": "xenerax-custom-stuff-mod:hardened_reinforced_copper_plate"
+}

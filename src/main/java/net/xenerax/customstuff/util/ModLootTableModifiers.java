@@ -40,7 +40,7 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(1f))
                         .conditionally(LocationCheckLootCondition.builder(LocationPredicate.Builder.create().feature(ModStructures.CHURCH)))
-                        .with(ItemEntry.builder(ModItems.ROTT_SCYTHE))
+                        .with(ItemEntry.builder(ModItems.CUSTOMIZATION_TEMPLATE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());

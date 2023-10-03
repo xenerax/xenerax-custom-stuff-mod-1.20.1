@@ -57,6 +57,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.COPPER_BOOTS));
 
         //material
+        itemModelGenerator.register(ModItems.CUSTOMIZATION_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_PLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_BOLT, Models.GENERATED);
         itemModelGenerator.register(ModItems.REINFORCED_COPPER_PLATE, Models.GENERATED);

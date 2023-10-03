@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "ruby",
+  "ingredient": {
+    "item": "xenerax-custom-stuff-mod:deepslate_ruby_ore"
+  },
+  "result": "xenerax-custom-stuff-mod:ruby"
+}

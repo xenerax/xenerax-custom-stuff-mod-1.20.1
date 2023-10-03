@@ -40,14 +40,22 @@
   "item.xenerax-custom-stuff-mod.copper_leggings": "Copper Leggings",
   "item.xenerax-custom-stuff-mod.copper_boots": "Copper Boots",
 
+  "item.xenerax-custom-stuff-mod.customization_template": "Customization Template",
   "item.xenerax-custom-stuff-mod.copper_plate": "Copper Plate",
   "item.xenerax-custom-stuff-mod.iron_bolt": "Iron Bolt",
   "item.xenerax-custom-stuff-mod.reinforced_copper_plate": "Reinforced Copper Plate",
   "item.xenerax-custom-stuff-mod.hardened_reinforced_copper_plate": "Hardened Reinforced Copper Plate",
+  "item.xenerax-custom-stuff-mod.whetstone": "Whetstone",
+  "item.xenerax-custom-stuff-mod.blood_clott": "Blood Clott",
+  "item.xenerax-custom-stuff-mod.bloody_whetstone": "Bloody Whetstone",
 
   "effect.xenerax-custom-stuff-mod.bleed": "Bleed",
   "effect.xenerax-custom-stuff-mod.rott": "Rott",
 
   "enchantment.xenerax-custom-stuff-mod.lightning_striker": "Lightning Striker",
-  "enchantment.xenerax-custom-stuff-mod.bleed": "Bleed"
+  "enchantment.xenerax-custom-stuff-mod.bleed": "Bleed",
+
+  "death.attack.bleed": "%s bleed out",
+  "death.attack.bleed.player": "%s bleed out while fighting %s",
+  "death.attack.bleed.item": "%s bleed out while fighting %s using %s"
 }

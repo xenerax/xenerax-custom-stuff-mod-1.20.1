@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "ruby",
+  "ingredient": {
+    "item": "xenerax-custom-stuff-mod:nether_ruby_ore"
+  },
+  "result": "xenerax-custom-stuff-mod:ruby"
+}

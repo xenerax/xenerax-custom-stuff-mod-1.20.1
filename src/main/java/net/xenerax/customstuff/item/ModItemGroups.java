@@ -66,6 +66,7 @@ public class ModItemGroups {
                         entries.add(ModItems.COPPER_BOOTS);
 
                         //materials
+                        entries.add(ModItems.CUSTOMIZATION_TEMPLATE);
                         entries.add(ModItems.COPPER_PLATE);
                         entries.add(ModItems.IRON_BOLT);
                         entries.add(ModItems.REINFORCED_COPPER_PLATE);

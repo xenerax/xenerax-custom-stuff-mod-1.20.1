@@ -20,30 +20,35 @@ public class BleedEnchantment extends Enchantment {
         if(!user.getWorld().isClient()) {
             ServerWorld world = (ServerWorld) user.getWorld();
 
-
-            if (((LivingEntity) target).getStatusEffect(ModEffects.BLEED) != null) {
+            //if (((LivingEntity) target).getStatusEffect(ModEffects.BLEED) != null) {
+            if (((LivingEntity) target).hasStatusEffect(ModEffects.BLEED)) {
                 int amp = ((LivingEntity) target).getStatusEffect(ModEffects.BLEED).getAmplifier();
                 if (level == 1) {
                     ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 0), user);
                 }
                 if (level == 2) {
                     if (amp == 0) {
-                        ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 1), user);
+                        ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 0), user);
                     }
                     if (amp == 1) {
                         ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 1), user);
                     }
                 }
                 if (level == 3) {
-                    if(amp < 2) {
-                        ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, amp + 1), user);
+                    if(amp == 0) {
+                        ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 1), user);
                     }
-                    else {
+                    else if(amp == 1) {
+                        ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 2), user);
+                    }
+                    else if (amp == 2) {
                         ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 2), user);
                     }
                 }
             }
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 0), user);
+            else {
+                ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 40, 0), user);
+            }
         }
 
         super.onTargetDamaged(user, target, level);

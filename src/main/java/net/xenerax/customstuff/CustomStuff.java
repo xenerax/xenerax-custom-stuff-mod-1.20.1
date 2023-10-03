@@ -3,6 +3,7 @@ package net.xenerax.customstuff;
 import net.fabricmc.api.ModInitializer;
 
 import net.xenerax.customstuff.block.ModBlocks;
+import net.xenerax.customstuff.damage_types.ModDamageTypes;
 import net.xenerax.customstuff.effect.ModEffects;
 import net.xenerax.customstuff.enchantment.ModEnchantments;
 import net.xenerax.customstuff.item.ModItemGroups;

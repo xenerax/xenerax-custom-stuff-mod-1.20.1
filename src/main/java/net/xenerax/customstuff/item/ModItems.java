@@ -63,12 +63,11 @@ public class ModItems {
             new CopperArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
+    public static final Item CUSTOMIZATION_TEMPLATE = registerItem("customization_template", new Item(new FabricItemSettings()));
+
     public static final Item COPPER_PLATE = registerItem("copper_plate", new Item(new FabricItemSettings()));
-
     public static final Item IRON_BOLT = registerItem("iron_bolt", new Item(new FabricItemSettings()));
-
     public static final Item REINFORCED_COPPER_PLATE = registerItem("reinforced_copper_plate", new Item(new FabricItemSettings()));
-
     public static final Item HARDENED_REINFORCED_COPPER_PLATE = registerItem("hardened_reinforced_copper_plate", new Item(new FabricItemSettings()));
     public static final Item WHETSTONE = registerItem("whetstone", new Item(new FabricItemSettings()));
     public static final Item BLOODY_WHETSTONE = registerItem("bloody_whetstone", new Item(new FabricItemSettings()));

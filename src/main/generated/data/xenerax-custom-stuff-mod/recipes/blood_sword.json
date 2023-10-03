@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "xenerax-custom-stuff-mod:bloody_whetstone"
+  },
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "result": {
+    "item": "xenerax-custom-stuff-mod:blood_sword"
+  },
+  "template": {
+    "item": "xenerax-custom-stuff-mod:customization_template"
+  }
+}

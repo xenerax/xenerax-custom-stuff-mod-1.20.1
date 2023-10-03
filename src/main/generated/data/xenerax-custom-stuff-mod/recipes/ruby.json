@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "xenerax-custom-stuff-mod:ruby_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "xenerax-custom-stuff-mod:ruby"
+  }
+}

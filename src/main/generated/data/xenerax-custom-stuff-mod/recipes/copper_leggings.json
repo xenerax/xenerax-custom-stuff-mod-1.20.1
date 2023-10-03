@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": {
+      "item": "xenerax-custom-stuff-mod:hardened_reinforced_copper_plate"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "P P",
+    "P P"
+  ],
+  "result": {
+    "item": "xenerax-custom-stuff-mod:copper_leggings"
+  },
+  "show_notification": true
+}

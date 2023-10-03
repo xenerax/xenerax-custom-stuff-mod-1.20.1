@@ -26,7 +26,7 @@ public class ModChestLootTableProvider extends SimpleFabricLootTableProvider {
     public void accept(BiConsumer<Identifier, LootTable.Builder> biConsumer) {
             biConsumer.accept(CUSTOM_LOOT_CHEST, LootTable.builder()
                     .pool(LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0F))
-                            .with(ItemEntry.builder(ModItems.COPPER_PLATE))
+                            //.with(ItemEntry.builder(ModItems.COPPER_PLATE))
                     ));
     }
 }

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "xenerax-custom-stuff-mod:ruby_block",
+    "xenerax-custom-stuff-mod:customizer_block",
+    "xenerax-custom-stuff-mod:ruby_ore",
+    "xenerax-custom-stuff-mod:deepslate_ruby_ore",
+    "xenerax-custom-stuff-mod:nether_ruby_ore",
+    "xenerax-custom-stuff-mod:end_ruby_ore",
+    "xenerax-custom-stuff-mod:sound_block"
+  ]
+}

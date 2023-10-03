@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "xenerax-custom-stuff-mod:whetstone"
+    },
+    {
+      "item": "xenerax-custom-stuff-mod:blood_clott"
+    }
+  ],
+  "result": {
+    "item": "xenerax-custom-stuff-mod:bloody_whetstone"
+  }
+}

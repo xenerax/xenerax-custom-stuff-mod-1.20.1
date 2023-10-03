@@ -4,8 +4,11 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.xenerax.customstuff.block.ModBlocks;
@@ -100,6 +103,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('P', ModItems.HARDENED_REINFORCED_COPPER_PLATE)
                 .criterion(hasItem(ModItems.HARDENED_REINFORCED_COPPER_PLATE), conditionsFromItem(ModItems.HARDENED_REINFORCED_COPPER_PLATE))
                 .offerTo(exporter, new Identifier((getRecipeName(ModItems.COPPER_BOOTS))));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLOODY_WHETSTONE, 1)
+                .input(ModItems.WHETSTONE)
+                .input(ModItems.BLOOD_CLOTT)
+                .criterion(hasItem(ModItems.WHETSTONE), conditionsFromItem(ModItems.WHETSTONE))
+                .criterion(hasItem(ModItems.BLOOD_CLOTT), conditionsFromItem(ModItems.BLOOD_CLOTT))
+                .offerTo(exporter, new Identifier((getRecipeName(ModItems.BLOODY_WHETSTONE))));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.CUSTOMIZATION_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_SWORD),
+                        Ingredient.ofItems(ModItems.BLOODY_WHETSTONE),
+                        RecipeCategory.COMBAT,
+                        ModItems.BLOOD_SWORD)
+                .criterion(hasItem(ModItems.BLOODY_WHETSTONE), conditionsFromItem(ModItems.BLOODY_WHETSTONE))
+                .offerTo(exporter, new Identifier((getRecipeName(ModItems.BLOOD_SWORD))));
 
     }
 }

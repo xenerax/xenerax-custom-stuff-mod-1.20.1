@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "xenerax-custom-stuff-mod:iron_bolt"
+    },
+    "P": {
+      "item": "xenerax-custom-stuff-mod:copper_plate"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "PPP",
+    "PPP"
+  ],
+  "result": {
+    "item": "xenerax-custom-stuff-mod:reinforced_copper_plate"
+  },
+  "show_notification": true
+}
