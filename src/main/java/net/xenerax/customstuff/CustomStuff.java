@@ -20,13 +20,15 @@ public class CustomStuff implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 
+		ModEffects.registerEffects();
+		ModEnchantments.registerModEnchantments();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
 		ModLootTableModifiers.modifyLootTables();
 
-		ModEffects.registerEffects();
-		ModEnchantments.registerModEnchantments();
+
 
 	}
 }

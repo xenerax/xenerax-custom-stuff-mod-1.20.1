@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "xenerax-custom-stuff-mod:ancient_xenerite_ingot"
+  },
+  "base": {
+    "item": "xenerax-custom-stuff-mod:xenerite_hammer"
+  },
+  "result": {
+    "item": "xenerax-custom-stuff-mod:ancient_xenerite_hammer"
+  },
+  "template": {
+    "item": "xenerax-custom-stuff-mod:customization_template"
+  }
+}

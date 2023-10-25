@@ -1,19 +1,32 @@
 package net.xenerax.customstuff.item;
 
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    RUBY(5, 650, 4.5f, 3.5f, 26,
+    RUBY(5, 650, 4.5f, 3.5f, 20,
             () -> Ingredient.ofItems(ModItems.RUBY)),
-    BLOOD(0, 2000, 0f, 0f, 26,
+    BLOOD(0, 2000, 0f, 0f, 20,
             () -> Ingredient.ofItems(ModItems.RUBY)),
-    ROTT(0, 2000, 0f, 0f, 26,
+    ROTT(0, 2000, 0f, 0f, 20,
             () -> Ingredient.ofItems(ModItems.RUBY)),
-    DRAGON(0, 2000, 0f, 0f, 26,
-            () -> Ingredient.ofItems(ModItems.RUBY))
+    DRAGON(0, 2000, 0f, 0f, 20,
+            () -> Ingredient.ofItems(ModItems.RUBY)),
+    CAT(0, 2000, 0f, 0f, 20,
+            () -> Ingredient.ofItems(ModItems.RUBY)),
+    IMYLDRIEN(0, 2000, 0f, 0f, 20,
+            () -> Ingredient.ofItems(ModItems.RUBY)),
+    COPPER(2, 200, 5f, 1.5f, 8,
+            () -> Ingredient.ofItems(Items.COPPER_INGOT)),
+    HR_COPPER(3, 750, 7f, 2.5f, 20,
+            () -> Ingredient.ofItems(ModItems.HARDENED_REINFORCED_COPPER_PLATE)),
+    XENERITE(4, 3000, 20.0f, 6f, 17,
+            () -> Ingredient.ofItems(ModItems.XENERITE_INGOT)),
+    ANCIENT_XENERITE(4, 4000, 200.0f, 7f, 20,
+            () -> Ingredient.ofItems(ModItems.ANCIENT_XENERITE_INGOT))
     ;
 
     private final int miningLevel;

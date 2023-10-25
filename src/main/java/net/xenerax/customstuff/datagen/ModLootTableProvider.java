@@ -32,6 +32,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.NETHER_RUBY_ORE, copperLikeOreDrops(ModBlocks.NETHER_RUBY_ORE, ModItems.RAW_RUBY));
         addDrop(ModBlocks.END_RUBY_ORE, copperLikeOreDrops(ModBlocks.END_RUBY_ORE, ModItems.RAW_RUBY));
 
+
+
+
+        addDrop(ModBlocks.REINFORCED_COPPER_BLOCK);
+        addDrop(ModBlocks.HARDENED_REINFORCED_COPPER_BLOCK);
+
+
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

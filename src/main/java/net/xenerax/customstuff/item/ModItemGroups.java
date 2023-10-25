@@ -11,6 +11,66 @@ import net.xenerax.customstuff.CustomStuff;
 import net.xenerax.customstuff.block.ModBlocks;
 
 public class ModItemGroups {
+
+    public static final ItemGroup Custom_Group = Registry.register(Registries.ITEM_GROUP, new Identifier(CustomStuff.MOD_ID, "custom"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.custom"))
+                    .icon(() -> new ItemStack(ModItems.BLOOD_SWORD)).entries((displayContext, entries) -> {
+
+                        //weapons
+                        entries.add(ModItems.BLOOD_SWORD);
+                        entries.add(ModItems.DRAGON_SWORD);
+                        entries.add(ModItems.ROTT_SCYTHE);
+                        entries.add(ModItems.MEOWMERE);
+                        entries.add(ModItems.IMYLDRIEN);
+
+                        //armor
+                        entries.add(ModItems.COPPER_HELMET);
+                        entries.add(ModItems.COPPER_CHESTPLATE);
+                        entries.add(ModItems.COPPER_LEGGINGS);
+                        entries.add(ModItems.COPPER_BOOTS);
+                        entries.add(ModItems.XENERITE_HELMET);
+                        entries.add(ModItems.XENERITE_CHESTPLATE);
+                        entries.add(ModItems.XENERITE_LEGGINGS);
+                        entries.add(ModItems.XENERITE_BOOTS);
+                        entries.add(ModItems.ANCIENT_XENERITE_HELMET);
+                        entries.add(ModItems.ANCIENT_XENERITE_CHESTPLATE);
+                        entries.add(ModItems.ANCIENT_XENERITE_LEGGINGS);
+                        entries.add(ModItems.ANCIENT_XENERITE_BOOTS);
+
+                        //tools
+                        entries.add(ModItems.XENERITE_PICKAXE);
+                        entries.add(ModItems.ANCIENT_XENERITE_PICKAXE);
+                        entries.add(ModItems.COPPER_HAMMER);
+                        entries.add(ModItems.IRON_HAMMER);
+                        entries.add(ModItems.DIAMOND_HAMMER);
+                        entries.add(ModItems.NETHERITE_HAMMER);
+                        entries.add(ModItems.XENERITE_HAMMER);
+                        entries.add(ModItems.ANCIENT_XENERITE_HAMMER);
+
+                        //materials
+                        entries.add(ModItems.CUSTOMIZATION_TEMPLATE);
+                        entries.add(ModItems.CHROMATIC_ORB);
+                        entries.add(ModItems.COPPER_PLATE);
+                        entries.add(ModItems.IRON_BOLT);
+                        entries.add(ModItems.REINFORCED_COPPER_PLATE);
+                        entries.add(ModItems.HARDENED_REINFORCED_COPPER_PLATE);
+                        entries.add(ModItems.WHETSTONE);
+                        entries.add(ModItems.BLOOD_CLOTT);
+                        entries.add(ModItems.BLOODY_WHETSTONE);
+                        entries.add(ModItems.XENERITE_INGOT);
+                        entries.add(ModItems.ANCIENT_XENERITE_INGOT);
+                        entries.add(ModItems.REINFORCED_STICK);
+                        entries.add(ModItems.DIAMOND_HAMMER_HEAD);
+                        entries.add(ModItems.DIAMOND_HAMMER_BODY);
+                        entries.add(ModItems.IRON_HAMMER_HEAD);
+                        entries.add(ModItems.IRON_HAMMER_BODY);
+                        entries.add(ModItems.COPPER_HAMMER_HEAD);
+                        entries.add(ModItems.COPPER_HAMMER_BODY);
+                        entries.add(ModBlocks.REINFORCED_COPPER_BLOCK);
+                        entries.add(ModBlocks.HARDENED_REINFORCED_COPPER_BLOCK);
+                    }).build());
+
+
     public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(CustomStuff.MOD_ID, "ruby"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
@@ -43,39 +103,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY_LEGGINGS);
                         entries.add(ModItems.RUBY_BOOTS);
 
-
-                        //entries.add(ModItems.BLOOD_SWORD);
-
-
                     }).build());
-
-
-    public static final ItemGroup Custom_Group = Registry.register(Registries.ITEM_GROUP, new Identifier(CustomStuff.MOD_ID, "custom"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.custom"))
-                    .icon(() -> new ItemStack(ModItems.BLOOD_SWORD)).entries((displayContext, entries) -> {
-
-                        //weapons
-                        entries.add(ModItems.BLOOD_SWORD);
-                        entries.add(ModItems.DRAGON_SWORD);
-                        entries.add(ModItems.ROTT_SCYTHE);
-
-                        //armor
-                        entries.add(ModItems.COPPER_HELMET);
-                        entries.add(ModItems.COPPER_CHESTPLATE);
-                        entries.add(ModItems.COPPER_LEGGINGS);
-                        entries.add(ModItems.COPPER_BOOTS);
-
-                        //materials
-                        entries.add(ModItems.CUSTOMIZATION_TEMPLATE);
-                        entries.add(ModItems.COPPER_PLATE);
-                        entries.add(ModItems.IRON_BOLT);
-                        entries.add(ModItems.REINFORCED_COPPER_PLATE);
-                        entries.add(ModItems.HARDENED_REINFORCED_COPPER_PLATE);
-                        entries.add(ModItems.WHETSTONE);
-                        entries.add(ModItems.BLOOD_CLOTT);
-                        entries.add(ModItems.BLOODY_WHETSTONE);
-                    }).build());
-
 
     public static void registerItemGroups() {
         CustomStuff.LOGGER.info("Registering Item Groups for " + CustomStuff.MOD_ID);

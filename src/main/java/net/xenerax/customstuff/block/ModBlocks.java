@@ -33,6 +33,18 @@ public class ModBlocks {
     public static final Block SOUND_BLOCK = registerBlock("sound_block",
             new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
+
+
+
+    public static final Block REINFORCED_COPPER_BLOCK = registerBlock("reinforced_copper_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block HARDENED_REINFORCED_COPPER_BLOCK = registerBlock("hardened_reinforced_copper_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+
+
+
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(CustomStuff.MOD_ID, name), block);

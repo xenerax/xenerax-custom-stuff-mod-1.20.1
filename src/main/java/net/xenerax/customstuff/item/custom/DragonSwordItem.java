@@ -10,8 +10,9 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.xenerax.customstuff.effect.ModEffects;
+import net.xenerax.customstuff.item.ToolsType.KatanaItem;
 
-public class DragonSwordItem extends SwordItem {
+public class DragonSwordItem extends KatanaItem {
     public DragonSwordItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }

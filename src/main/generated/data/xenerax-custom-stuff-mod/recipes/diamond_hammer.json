@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "xenerax-custom-stuff-mod:diamond_hammer_body"
+    },
+    "H": {
+      "item": "xenerax-custom-stuff-mod:diamond_hammer_head"
+    },
+    "S": {
+      "item": "xenerax-custom-stuff-mod:reinforced_stick"
+    }
+  },
+  "pattern": [
+    "HBH",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "xenerax-custom-stuff-mod:diamond_hammer"
+  },
+  "show_notification": true
+}

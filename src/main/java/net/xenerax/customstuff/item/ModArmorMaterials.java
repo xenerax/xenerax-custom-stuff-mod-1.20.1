@@ -2,7 +2,6 @@ package net.xenerax.customstuff.item;
 
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -14,7 +13,11 @@ public enum ModArmorMaterials implements ArmorMaterial {
     RUBY("ruby", 25, new int[] { 3, 8, 6, 3 }, 19, SoundEvents.ITEM_ARMOR_EQUIP_TURTLE,
             2f, 0.1f, () -> Ingredient.ofItems(ModItems.RUBY)),
     COPPER("copper", 15, new int[] { 2, 6, 5, 2 }, 19, SoundEvents.ITEM_ARMOR_EQUIP_TURTLE,
-            0f, 0f, () -> Ingredient.ofItems(ModItems.HARDENED_REINFORCED_COPPER_PLATE))
+            0f, 0f, () -> Ingredient.ofItems(ModItems.HARDENED_REINFORCED_COPPER_PLATE)),
+    XENERITE("xenerite", 15, new int[] { 4, 9, 7, 4 }, 17, SoundEvents.ITEM_ARMOR_EQUIP_TURTLE,
+            3.5f, 0.1f, () -> Ingredient.ofItems(ModItems.XENERITE_INGOT)),
+    ANCIENT_XENERITE("ancient_xenerite", 15, new int[] { 5, 10, 8, 5 }, 20, SoundEvents.ITEM_ARMOR_EQUIP_TURTLE,
+            4f, 0f, () -> Ingredient.ofItems(ModItems.ANCIENT_XENERITE_INGOT))
     ;
 
     private final String name;

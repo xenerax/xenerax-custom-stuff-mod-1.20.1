@@ -2,16 +2,13 @@ package net.xenerax.customstuff.item.custom;
 
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ModStatus;
 import net.minecraft.world.World;
-import net.xenerax.customstuff.effect.ModEffects;
 import net.xenerax.customstuff.item.ModArmorMaterials;
 
 import java.util.Map;
